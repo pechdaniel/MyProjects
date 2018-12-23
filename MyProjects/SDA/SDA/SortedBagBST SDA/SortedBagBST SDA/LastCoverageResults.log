@@ -1,0 +1,33 @@
+[2018-06-08 16:15:37] [info] Start Program:
+Path:"D:\Faculty\SDA\SortedBagBST SDA\Debug\SortedBagBST SDA.exe"
+Arguments:
+Working directory: "D:\Faculty\SDA\SortedBagBST SDA\SortedBagBST SDA\"
+Modules: Selected: D:\Faculty\SDA\SortedBagBST SDA\Debug\SortedBagBST SDA.exe Excluded: 
+Sources: Selected: D:\Faculty\SDA\SortedBagBST SDA\SortedBagBST SDA Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\daniel\AppData\Local\Temp\eh0vinwx.kl3 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+
+[2018-06-08 16:15:41] [info] Module: D:\Faculty\SDA\SortedBagBST SDA\Debug\SortedBagBST SDA.exe is selected because it matches selected pattern: D:\Faculty\SDA\SortedBagBST SDA\Debug\SortedBagBST SDA.exe
+[2018-06-08 16:15:41] [info] Module: C:\Windows\SysWOW64\ntdll.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:41] [info] Module: C:\Windows\SysWOW64\kernel32.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:41] [info] Module: C:\Windows\SysWOW64\KernelBase.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:41] [info] Module: C:\Windows\SysWOW64\vcruntime140d.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:41] [info] Module: C:\Windows\SysWOW64\ucrtbased.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:41] [info] Module: C:\Windows\SysWOW64\msvcp140d.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:43] [info] Module: C:\Windows\SysWOW64\kernel.appcore.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:43] [info] Module: C:\Windows\SysWOW64\msvcrt.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:43] [info] Module: C:\Windows\SysWOW64\rpcrt4.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:43] [info] Module: C:\Windows\SysWOW64\sspicli.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:43] [info] Module: C:\Windows\SysWOW64\cryptbase.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:43] [info] Module: C:\Windows\SysWOW64\bcryptprimitives.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:43] [info] Module: C:\Windows\SysWOW64\sechost.dll is skipped because it matches no selected patterns
+[2018-06-08 16:15:43] [info] ----------------------------------------------------
+[2018-06-08 16:15:43] [info] Coverage binary generated in file: C:\Users\daniel\AppData\Local\Temp\eh0vinwx.kl3
+[2018-06-08 16:15:43] [info] ----------------------------------------------------
