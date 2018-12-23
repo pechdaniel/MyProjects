@@ -1,0 +1,3 @@
+2,Maxim,1,10,Alina
+1,Nicu,1,10,Iuliana
+0,Ionci,2,1,Indigo
