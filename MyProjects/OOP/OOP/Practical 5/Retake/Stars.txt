@@ -1,0 +1,6 @@
+Big one,ce,12.3,30.4
+Small one,ce,10,10
+Harsh one,asta,10,10
+Mare,bubi,10,10
+Pls,bubi,10,10
+ni,bubi,10,10
