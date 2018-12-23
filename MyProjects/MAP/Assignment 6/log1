@@ -1,0 +1,680 @@
+
+Program state -= 1 =-
+
+
+ExeStack:
+v=10
+(new(a,22); (fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))
+
+SymTable:
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(new(a,22); (fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))
+
+SymTable:
+v : 10
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+new(a,22)
+(fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))
+
+SymTable:
+v : 10
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+fork((wR(a,30); (v=32; (print(v); print(rH(a))))))
+(print(v); print(rH(a)))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(print(v); print(rH(a)))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+print(v)
+print(rH(a))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+print(rH(a))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+10
+
+Heap:
+1 : 30
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+10
+30
+
+Heap:
+1 : 30
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+v=10
+(new(a,22); (fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))
+
+SymTable:
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(new(a,22); (fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))
+
+SymTable:
+v : 10
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+new(a,22)
+(fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))
+
+SymTable:
+v : 10
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+fork((wR(a,30); (v=32; (print(v); print(rH(a))))))
+(print(v); print(rH(a)))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(print(v); print(rH(a)))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+print(v)
+print(rH(a))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+print(rH(a))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+10
+
+Heap:
+1 : 30
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+10
+30
+
+Heap:
+1 : 30
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+v=10
+(new(a,22); (fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))
+
+SymTable:
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(new(a,22); (fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))
+
+SymTable:
+v : 10
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+new(a,22)
+(fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))
+
+SymTable:
+v : 10
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+fork((wR(a,30); (v=32; (print(v); print(rH(a))))))
+(print(v); print(rH(a)))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(print(v); print(rH(a)))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+print(v)
+print(rH(a))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+print(rH(a))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+10
+
+Heap:
+1 : 30
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+10
+30
+
+Heap:
+1 : 30
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+v=10
+(new(a,22); (fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))
+
+SymTable:
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(new(a,22); (fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a)))))
+
+SymTable:
+v : 10
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+new(a,22)
+(fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))
+
+SymTable:
+v : 10
+
+Out:
+
+Heap:
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(fork((wR(a,30); (v=32; (print(v); print(rH(a)))))); (print(v); print(rH(a))))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+fork((wR(a,30); (v=32; (print(v); print(rH(a))))))
+(print(v); print(rH(a)))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+(print(v); print(rH(a)))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+print(v)
+print(rH(a))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+
+Heap:
+1 : 22
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+print(rH(a))
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+10
+
+Heap:
+1 : 30
+
+FileTable:
+
+------------------
+
+Program state -= 1 =-
+
+
+ExeStack:
+
+SymTable:
+a : 1
+v : 10
+
+Out:
+10
+30
+
+Heap:
+1 : 30
+
+FileTable:
+
+------------------
