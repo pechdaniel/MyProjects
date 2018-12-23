@@ -1,0 +1,8 @@
+Bug fix,-1,-1, 
+Ceva,0,2,Gigel
+This must be done,0,-1, 
+This is cool so do it,0,1,Manuel
+What is this,0,2,Gigel
+Do this,1,2,Gigel
+Do that,1,1,Manuel
+Something unknown,1,-1, 
