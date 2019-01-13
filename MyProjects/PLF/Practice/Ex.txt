@@ -1,0 +1,62 @@
+;gnu clisp 2.49
+;Write twice the n-th element of a linear list
+(defun twice(L E C)
+    (cond
+        ( (null L) nil )
+        ( (or(< C E) (> C E)) (append (list (car L)) (twice (cdr L) E (+ C 1))) )
+        ( (= C E) (append (append (list (car L)) (list (car L))) (twice (cdr L) E (+ C 1))) )
+     )
+)
+;(print(twice '(1 2 3 4 5 6 8 9 10) 3 1))
+
+;Write a function to return an association list with the two lists given as parameters. 
+(defun associ(A B)
+   (cond
+        ( (or (null A) (null B)) nil )
+        ( T(append (append (list(append (list (car A)) (append (list ".") (list (car B)) )))) (associ (cdr A) (cdr B))) )
+    )
+)
+;(print(associ '(A B C) '(X Y Z)))
+
+;Write a function to determine the number of all sublists of a given list, on any level.
+;A sublist is either the list itself, or any element that is a list, at any level
+
+(defun listss(L C)
+    (cond
+        ( (null L) C )
+        ( (listp (car L)) (listss (cdr L) (+ C (listss (car L) 1)) ) )
+        ( T(listss (cdr L) C) )
+     )
+)
+;(print(listss '(1 2 (3 ((4) (5)) (6 7)) 8 (9 10)) 1))
+
+;Write a function to merge two sorted lists without keeping double values.
+
+(defun mergelists(A B)
+    (cond
+        ( (and(null A) (null B)) nil )
+        ( (or (null A) (> (car A) (car B))) (append (list (car B)) (mergelists A (cdr B)) ) )
+        ( (or (null B) (< (car A) (car B))) (append (list (car A)) (mergelists (cdr A) B) ) )
+        ( (= (car A) (car B)) (append (list (car A)) (mergelists (cdr A) (cdr B)) ) )
+     )
+ )
+;(print(mergelists '(1 3 5 7) '(7 9 10)))
+
+;Write a function to return the set of all the atoms of a list.
+;Exemplu: (1 (2 (1 3 (2 4) 3) 1) (1 4)) ==> (1 2 3 4)
+
+(defun check(L E)
+    (cond
+        ( (null L) T )
+        ( (and (not (listp (car L))) (not (= (car L) E)) ) (check (cdr L) E) )
+        ( (listp (car L)) (check (cdr L) E) )
+        ( (= (car L) E) nil )
+     )
+)
+
+(defun atoms(L)
+    (cond
+        ( (null L) nil )
+        ( (listp (car L)) () )
+     )
+ )

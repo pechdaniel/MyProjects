@@ -1,0 +1,13 @@
+
+;inorder(l1,l2,l3) = { l=[], nil
+                     ; inorder(l2) U l1 U inorder(l3)
+
+(defun inorder (L)
+	(cond
+		((null L) nil)
+		(T (append (inorder (car (cdr L))) (append (list (car L)) (inorder (car(cdr (cdr L)))))))
+	)
+)
+
+(print(inorder '(1(5)(3(4)(2)))))
+

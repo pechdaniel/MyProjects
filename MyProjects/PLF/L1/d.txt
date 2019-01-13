@@ -1,0 +1,10 @@
+;gnu clisp 2.49
+;Write a function to return the sum of all numerical atoms in a list at superficial level.
+(defun sum(L S)
+ (cond
+     ( (null L) S )
+     ( (numberp (car L)) (sum (cdr L) (+ S (car L))) )
+     (T (sum (cdr L) S))
+ )
+)
+(print(sum '(1 2 (3 4) 7) 9))

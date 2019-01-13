@@ -1,0 +1,25 @@
+;gnu clisp 2.49
+
+;In a binary tree, return the number of nodes from level K
+
+(defun level(L K C)
+    (cond
+        ( (= K C) 1 )
+        ( (and (> K C) (and (or (not (listp (car (cdr L)))) (null (car (cdr L))) ) (or (not (listp (car (cdr (cdr L))))) (null (car (cdr (cdr L)))) ) ) ) 0 )
+        ( (and (and (listp (car (cdr L))) (not (null (car (cdr L)))) ) (and (listp (car (cdr (cdr L)))) (not (null (car (cdr (cdr L))))) ) ) (+ (level (car (cdr L)) K (+ C 1)) (level (car (cdr (cdr L))) K (+ C 1))) )
+        ( (and (and (listp (car (cdr L))) (not (null (car (cdr L)))) ) (and (not (listp (car (cdr (cdr L))))) (not (null (car (cdr (cdr L))))) ) ) (+ (level (car (cdr L)) K (+ C 1)) 1) )
+        ( (and (and (listp (car (cdr L))) (not (null (car (cdr L)))) ) (null (car (cdr (cdr L)))) ) (level (car (cdr L)) K (+ C 1)) )
+     )
+ )
+
+(defun levelK(L K)
+    (cond
+        ( (= K 0) 1 )
+        ( T (level L K 0) )
+     )
+ )
+;(print(levelK '(a (b (c)) (e (f (g) (h)) (i))) 3))
+;            a
+;        b       e
+;      c       f   i
+;            g   h
