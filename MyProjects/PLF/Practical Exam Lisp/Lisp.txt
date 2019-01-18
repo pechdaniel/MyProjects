@@ -1,0 +1,32 @@
+;gnu clisp 2.49
+
+;Given a list of numbers, return the sorted list without the duplicate elements.
+(defun del(L R)
+    (cond
+        ( (null L) nil )
+        ( (member (car L) R) (del (cdr L) R) )
+        ( T(append (list (car L)) (del (cdr L) (append R (list (car L))))) )
+     )
+ )
+;(print(del '(1 2 2 3 4 5 5) '()))
+(defun ins(L E)
+    (cond
+        ( (null L) (list E) )
+        ( (< (car L) E) (append (list(car L)) (ins (cdr L) E)) )
+        ( (> (car L) E) (append (list E) L))
+     )
+ )
+;(print(ins '(1 2 4) 3))
+(defun sorted(L R)
+    (cond
+        ( (null L) R )
+        ( T(sorted (cdr L) (ins R (car L))) )
+     )
+ )
+;(print(sorted '(4 2 1 6) '()))
+(defun main(L)
+    (cond
+        ( T (sorted (del L '()) '()))
+     )
+ )
+(print(main '(5 1 3 4 2 1 3)))
